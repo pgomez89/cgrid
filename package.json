@@ -1,0 +1,27 @@
+{
+  "name": "cgrid",
+  "version": "1.0.0",
+  "description": "Crawlling our Grid",
+  "main": "xpath.js",
+  "dependencies": {
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgomez89/cgrid.git"
+  },
+  "keywords": [
+    "crawlling"
+  ],
+  "author": "Pablo Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgomez89/cgrid/issues"
+  },
+  "homepage": "https://github.com/pgomez89/cgrid#readme"
+}
