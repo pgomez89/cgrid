@@ -5,6 +5,16 @@ var html = `<div class="backupedFilter hideElement" data-completed="true" data-f
 
 var doc = new dom().parseFromString(html)
 var nodes = xpath.select("//span", doc)
-var result = xpath.evaluate('//span', doc, null, xpath.XPathResult.ANY_TYPE, null)
+var result = xpath.evaluate('//div[contains(@class, "rate-plan")]', doc, null, xpath.XPathResult.ANY_TYPE, null)
 
-console.log(nodes[0].localName + ": " + nodes[0].firstChild.data)
+node = result.iterateNext();
+while (node) {
+    console.log(node.localName + ": " + node.firstChild.data);
+    console.log(">>>>>>>>>>>>>>")
+    console.log("Node: " + node.toString());
+ 
+    node = result.iterateNext();
+}
+
+
+
